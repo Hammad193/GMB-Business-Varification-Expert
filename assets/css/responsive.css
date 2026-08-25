@@ -1,0 +1,70 @@
+/* ============================================================
+   RESPONSIVE CSS - Additional Tweaks
+   ============================================================ */
+
+/* ===== EXTRA SMALL DEVICES ===== */
+@media (max-width: 400px) {
+    .container {
+        padding: 0 16px;
+    }
+    .city-hero h1 {
+        font-size: 1.6rem;
+    }
+    .section-title h2,
+    .section-heading h2 {
+        font-size: 1.4rem;
+    }
+    .city-stats {
+        grid-template-columns: 1fr;
+    }
+    .stat-card h2 {
+        font-size: 1.6rem;
+    }
+    .cities-grid {
+        grid-template-columns: 1fr;
+    }
+    .logo a {
+        font-size: 22px;
+    }
+    .logo .expert {
+        font-size: 13px;
+        padding: 2px 8px;
+    }
+}
+
+/* ===== TABLET LANDSCAPE ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .city-hero h1 {
+        font-size: 2.8rem;
+    }
+    .seo-list ul {
+        grid-template-columns: 1fr 1fr;
+    }
+    header .menu {
+        gap: 18px;
+    }
+    header .menu a {
+        font-size: 13px;
+    }
+}
+
+/* ===== PRINT ===== */
+@media print {
+    .topbar,
+    .floating-whatsapp,
+    .header-btn,
+    .menu-toggle,
+    .cta-section,
+    .floating-whatsapp {
+        display: none !important;
+    }
+    header .menu {
+        display: flex !important;
+    }
+    header {
+        position: static !important;
+    }
+    .city-hero {
+        padding: 40px 0 !important;
+    }
+}
